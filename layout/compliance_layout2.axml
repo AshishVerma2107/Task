@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+	<ScrollView
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+			<LinearLayout
+				android:orientation="horizontal"
+	            android:id="@+id/linearlayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+				android:weightSum="1"
+				android:layout_marginTop="10dp">
+				<TextView
+					android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Task Description"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="9dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.9"
+                    android:gravity="center"/>
+				<ImageView
+					android:id="@+id/imageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/microphone"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.1" />
+			</LinearLayout>
+			<EditText
+				android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:id="@+id/c_taskdescrip"
+				android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10"/>
+			<LinearLayout
+				android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp">
+				<LinearLayout
+					android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+					<TextView
+						android:layout_marginLeft="10dp"
+						android:text="Task Detail : "
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" />
+					<TextView
+						android:layout_marginLeft="30dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+					    android:id="@+id/c_detail" />
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content">
+					<TextView
+						android:layout_marginLeft="10dp"
+						android:text="Task Name : "
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<TextView
+						android:layout_marginLeft="27dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+					    android:id="@+id/c_name" />
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content">
+					<TextView
+						android:layout_marginLeft="10dp"
+						android:text="Task Description :"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+					    android:id="@+id/c_descrip" />
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content">
+					<TextView
+						android:text="MarkBy :"
+						android:layout_marginLeft="10dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<TextView
+						android:layout_marginLeft="55dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+					    android:id="@+id/c_markby" />
+				</LinearLayout>
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content">
+					<TextView
+						android:text="Creation Date :"
+						android:layout_marginLeft="10dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<TextView
+						android:layout_marginLeft="15dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+                        android:id="@+id/c_creationdate" />
+        </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+      android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+          <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Deadline Date :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+          <TextView
+            
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c_deadline" />
+        </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+      android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+          <TextView
+            android:text="CreateBy :"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+          <TextView
+           
+            android:layout_marginLeft="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c_createdby" />
+        </LinearLayout>
+      </LinearLayout>
+      <HorizontalScrollView
+  android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+  android:scrollbars="horizontal"
+  android:fadeScrollbars="true"
+ >
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="15dp"
+          android:id="@+id/rl1"
+           android:orientation="horizontal">
+          <ImageButton
+           android:src="@drawable/cameraon"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/camera_btn"
+         android:background="@null"/>
+        </LinearLayout>
+      </HorizontalScrollView>
+      <HorizontalScrollView
+  android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+  android:scrollbars="horizontal"
+  android:fadeScrollbars="true"
+ >
+        <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+         android:layout_marginRight="15dp"
+          android:id="@+id/rl2">
+          <ImageButton
+           android:src="@drawable/video"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/video_btn"
+         android:background="@null"
+          />
+        </LinearLayout>
+      </HorizontalScrollView>
+      <HorizontalScrollView
+  android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+  android:scrollbars="horizontal"
+  android:fadeScrollbars="true"
+ >
+        <LinearLayout
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="15dp"
+   android:layout_marginRight="15dp"
+    android:id="@+id/rl3"
+    android:orientation="horizontal">
+          <ImageButton
+           android:src="@drawable/microphone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/micro_btn"
+         android:background="@null"
+          />
+        
+        </LinearLayout>
+      </HorizontalScrollView>
+     
+      <HorizontalScrollView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:scrollbars="horizontal"
+android:fadeScrollbars="true"
+ >
+        <LinearLayout
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="15dp"
+   android:orientation="horizontal"
+   android:layout_marginRight="15dp"
+    android:id="@+id/rl4">
+          <ImageButton
+           android:src="@drawable/placeholder"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/location_btn"
+         android:background="@null"
+          />
+        </LinearLayout>
+      </HorizontalScrollView>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

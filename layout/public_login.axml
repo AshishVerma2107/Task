@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+	<ImageView
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+	    android:src = "@drawable/tracking"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+		<TextView
+			android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+		    android:layout_marginBottom="20dp"
+		    android:textSize="20dp"
+		    android:textColor="@color/colorPrimary" 
+		    android:text="Enter your phone number to get started"
+            android:gravity="center"/>
+		<EditText
+			android:id="@+id/phone_p"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+		    android:inputType="number"
+            style="@style/spinner_style" />
+		<Button
+			android:id="@+id/verify_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button" />
+		<TextView
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginTop="10dp"
+			android:textColor="#CB3730"
+			android:textStyle="bold"
+			android:id="@+id/methodforlogin"
+			android:text="Try Another Method for Log In"
+			android:textSize="17dp"/>
+	</LinearLayout>
+</LinearLayout>
+

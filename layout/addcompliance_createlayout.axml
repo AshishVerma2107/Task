@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cardview="http://schemas.android.com/apk/res-auto"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	
+	<android.support.v7.widget.CardView
+			cardview:cardCornerRadius="5dp"
+			cardview:cardMaxElevation="6dp"
+			cardview:cardUseCompatPadding="true"
+			cardview:contentPadding="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/cardview">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal">
+					<TextView
+						android:layout_marginLeft="15dp"
+					    android:textColor="#000"
+						android:text="Compliance Type:"
+						android:id="@+id/compliancetype"
+						
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					 <RadioGroup android:minWidth="25px" 
+							android:minHeight="25px" 
+							android:layout_width="match_parent" 
+							android:layout_height="wrap_content" 
+							android:id="@+id/radioGroup1">  
+                           <RadioButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" 
+							
+								android:text="Mandatory" 
+							android:id="@+id/mandatory" />  
+    <RadioButton 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:text="Not Mandatory" 
+	android:id="@+id/not" />  
+     
+</RadioGroup>  
+						</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal"
+					android:weightSum="1"
+					>
+					<TextView
+						android:layout_marginLeft="15dp"
+						android:text="File Type"
+					    android:textColor="#000"
+						android:id="@+id/image_no"
+						android:layout_weight="0.5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"/>
+					<Spinner  
+   android:id="@+id/spinner_type"  
+android:layout_weight="0.5"
+   android:layout_width="match_parent"  
+   android:layout_height="wrap_content"  
+    />  
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal"
+					android:weightSum="1"
+					
+					>
+					<TextView
+					android:textColor="#000"
+						android:layout_marginLeft="15dp"
+						android:text="File Format"
+						android:id="@+id/image_format"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+					android:layout_weight="0.5"/>
+					
+					<Spinner  
+   android:id="@+id/spiner_format"  
+   android:layout_width="match_parent"  
+   android:layout_height="wrap_content" 
+	android:layout_weight="0.5"/>  
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal"
+					
+					>
+					<TextView
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="15dp"
+						android:text="Maximum number"
+						android:id="@+id/max_num"
+					     android:textColor="#000"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<EditText
+						android:id="@+id/maxnumberedit"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:imeOptions="actionNext"
+						android:singleLine="true"
+						android:layout_marginTop="15dp"
+						android:drawablePadding="10dp"
+						 android:inputType="number"
+						style="@style/spinner_style" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:orientation="vertical"
+					android:gravity="center"
+					>
+				<Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add To List"
+                    android:textStyle="bold"
+                   
+                    android:id="@+id/btn_addtolist"
+		            android:background="@drawable/rounded_button"
+		            android:textColor="#FFFFFF"
+		            />
+					</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/compliance_ll1">
+					<TaskAppWithLogin.Adapter.ScrollableListView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/grid_compliance"
+						android:numColumns="1">
+					</TaskAppWithLogin.Adapter.ScrollableListView>
+				</LinearLayout>
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+		
+</LinearLayout>

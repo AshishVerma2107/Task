@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:gravity="center"
+	android:padding="20dp"
+    android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:text="Log In"
+		android:gravity="center"
+		android:textSize="30dp"/>
+	<ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+	    android:src = "@drawable/taskIcon"/>
+	<EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+		android:layout_marginTop="10dp"
+		android:drawableLeft="@drawable/user"
+		android:padding="10dp"
+		android:drawablePadding="10dp"
+        style="@style/spinner_style" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+	    android:padding="10dp"
+	    android:drawablePadding="10dp"
+        android:hint="Password"
+		android:drawableLeft="@drawable/password"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        style="@style/spinner_style" />
+	<Button
+        android:id="@+id/login_snp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with SNP"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button" />
+	<TextView
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:text="Or Connect With"
+		android:textStyle="bold"
+		android:visibility="gone"
+		android:gravity="center"
+		android:textColor="#CB3730"
+		android:textSize="15dp"
+		android:layout_margin="10dp"/>
+	<LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+		android:visibility="gone"
+	  android:layout_marginTop="10dp"
+      android:gravity="center"
+	  android:weightSum="1">
+		<Button
+			android:id="@+id/login_google"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="Google"
+			android:drawableLeft="@drawable/search"
+		    android:padding="10dp"
+		    android:drawablePadding="10dp"
+		    android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:background="@drawable/google1" />
+		<Button
+            android:id="@+id/login_fb"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="Facebook"
+			android:drawableLeft="@drawable/facebook2"
+		    android:padding="10dp"
+		    android:drawablePadding="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:background="@drawable/facebook1" />
+	</LinearLayout>
+	<LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+	  android:layout_marginTop="10dp"
+		android:visibility="gone"
+      android:gravity="center"
+	  android:weightSum="1">
+		<Button
+			android:id="@+id/login_twitter"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="Twitter"
+		    android:layout_weight="0.5"
+			android:drawableLeft="@drawable/twitter"
+		    android:padding="10dp"
+		    android:drawablePadding="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/twitter1" />
+		<Button
+            android:id="@+id/login_phone"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="With Phone"
+		    android:layout_marginLeft="10dp"
+		    android:padding="10dp"
+		    android:drawablePadding="10dp"
+			android:drawableLeft="@drawable/smartphone"
+		    android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button" />
+	</LinearLayout>
+</LinearLayout>
