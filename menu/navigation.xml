@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/navigation_home"
+      android:icon="@drawable/create1"
+      android:title="Create Task" />
+
+  <item
+      android:id="@+id/navigation_dashboard"
+      android:icon="@drawable/download"
+      android:title="Task Inbox" />
+
+  <item
+      android:id="@+id/navigation_notifications"
+      android:icon="@drawable/upload"
+      android:title="Task Outbox" />
+
+</menu>

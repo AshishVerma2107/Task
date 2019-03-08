@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <item
+       android:id="@+id/order"
+       android:orderInCategory="100"
+       app:showAsAction="always"
+       android:icon="@drawable/order"
+       android:actionViewClass="Android.Widget.ImageButton"
+       android:title="Order By">
+    <menu>
+      <item android:id="@+id/namewise"
+         android:orderInCategory="100"
+         app:showAsAction="always"
+       
+         android:title="Namewise">
+
+
+      </item>
+      <item android:id="@+id/creationdatewise"
+       android:orderInCategory="100"
+       app:showAsAction="always"
+       
+       android:title="DeadLine Ascending">
+
+
+      </item>
+      <item android:id="@+id/datewiseDESC"
+       android:orderInCategory="100"
+       app:showAsAction="always"
+      
+       android:title="DeadLine Descending">
+
+
+      </item>
+    </menu>
+  </item>
+  <item
+        android:id="@+id/filtr"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/filter1"
+        android:title="filter"
+        app:itemIconTint="#FFFFFF"/>
+</menu>
