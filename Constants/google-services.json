@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "463130851459",
+    "firebase_url": "https://signin-e4b67.firebaseio.com",
+    "project_id": "signin-e4b67",
+    "storage_bucket": "signin-e4b67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463130851459:android:3f5f810c441172f7",
+        "android_client_info": {
+          "package_name": "com.work121.taskappwithlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463130851459-9qhvdkm9aq0dho9o4vj7nfhu6jv396cg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.work121.taskappwithlogin",
+            "certificate_hash": "7f5e9f4b727abe50ae08ec4e2c407bf1c0644b24"
+          }
+        },
+        {
+          "client_id": "463130851459-5d4v6onqtosvoa13vdaqk5tcmucs8hcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFk5OXcQ_2kJBfSOqdQEYyz2WKkgtujzQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463130851459-5d4v6onqtosvoa13vdaqk5tcmucs8hcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
